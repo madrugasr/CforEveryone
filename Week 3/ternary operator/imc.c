@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     scanf("%f", &height);
     imc = weight / (height * height);
     
-    imc = (imc <= 18.5) ? printf("\nUnderweight")
+    (imc <= 18.5) ? printf("\nUnderweight")
     : (imc <= 25) ? printf("\nNormal") 
     : (imc <= 30) ? printf("\nOverweight") 
     : (imc <= 35) ? printf("\nObesity I") 

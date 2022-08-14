@@ -7,29 +7,11 @@
 
 #include <stdio.h>
 
-// Function to Add two numbers
-float sum(float num1, float num2)
-{ 
-    return num1 + num2;
-}
-
-// Function to Subtract two numbers
-float sub(float num1, float num2)
-{
-    return num1 - num2;
-}
-
-// Function to Multiply two numbers
-float mult(float num1, float num2)
-{
-    return num1 * num2;
-}
-
-// Function to Divide two numbers
-float div(float num1, float num2)
-{
-    return num1 / num2;
-}
+// Function declaration
+float sum(float num1, float num2);
+float sub(float num1, float num2);
+float mult(float num1, float num2);
+float div(float num1, float num2);
 
 int main(int argc, char const *argv[])
 {
@@ -43,7 +25,7 @@ int main(int argc, char const *argv[])
     printf("\n1. Sum");
     printf("\n2. Subtraction");
     printf("\n3. Multiplication");
-    printf("\n4. Division");
+    printf("\n4. Division\n");
     printf("\nEnter the option: ");
     scanf("%hd", &option);
     switch (option)
@@ -67,4 +49,26 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+// Function to Add two numbers
+float sum(float num1, float num2)
+{
+    return num1 + num2;
+}
 
+// Function to Subtract two numbers
+float sub(float num1, float num2)
+{
+    return num1 - num2;
+}
+
+// Function to Multiply two numbers
+float mult(float num1, float num2)
+{
+    return num1 * num2;
+}
+
+// Function to Divide two numbers
+float div(float num1, float num2)
+{
+    return num1 / num2;
+}
